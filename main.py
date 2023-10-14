@@ -138,7 +138,7 @@ viscosity = 0.0/pi
 
 # Define initial condition
 def fun_u_0(x):
-    return -tf.sin(pi * (x + 1.0))
+    return  tf.ones_like(x) #-tf.sin(pi * (x + 1.0))
 
 # Define boundary condition
 def fun_u_b(t, x):
